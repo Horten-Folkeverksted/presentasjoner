@@ -1,0 +1,24 @@
+# File /config/network/my-network in hassos-boot partition
+[connection]
+id=my-network
+# Must be unique
+uuid=a3f2b1cc-efe9-4f2d-9bf6-77397c269f03
+type=802-11-wireless
+
+[802-11-wireless]
+mode=infrastructure
+ssid=folkeverkstedet
+#Uncomment below if your SSID is not broadcasted
+#hidden=true
+
+[802-11-wireless-security]
+auth-alg=open
+key-mgmt=wpa-psk
+psk=fo***st
+
+[ipv4]
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+method=auto
